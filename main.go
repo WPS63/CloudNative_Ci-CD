@@ -1,7 +1,7 @@
 package main
 
 import (
-    "./labs/microservice"
+    "CNAA/microservice"
     "log"
 )
 
