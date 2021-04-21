@@ -2,7 +2,7 @@
 package microservice
 
 import (
-    "bytes"
+    //"bytes"
     "net/http"
     "net/http/httptest"
     "testing"
