@@ -43,3 +43,4 @@ func buildUrl(path string) string {
 
 func urlFor(scheme string, serverPort string, path string) string {
     return scheme + "://localhost:" + serverPort + path
+}
