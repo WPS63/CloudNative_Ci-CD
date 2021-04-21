@@ -1,5 +1,6 @@
 name: hello-world
 on: [push, pull_request]
+name: setup
 jobs:
   test:
     strategy:
