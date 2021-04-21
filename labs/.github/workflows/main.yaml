@@ -15,7 +15,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Test
-      run: go test ./microservice 
+      run: go test ./labs/microservice 
   docker:
     needs: test
     runs-on: ubuntu-latest
