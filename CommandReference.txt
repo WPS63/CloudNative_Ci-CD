@@ -1,0 +1,28 @@
+// save frequently used terminal commands here
+
+//microk8s 
+alias kubectl='microk8s kubectl' 
+
+
+//Docker
+sudo docker build . -t project
+sudo docker container ls
+sudo docker image ls
+sudo docker container run -p 8000:8000 project (used to run our project container)
+
+//MongoDB
+sudo docker exec -it mongodb mongo
+-> use tasks
+-> db.posts.find({})
+
+//Project CRUD curl commands
+curl "http://localhost:8000/list"
+curl "http://localhost:8000/create?taskId=JOB1&task=DISHES"
+curl "http://localhost:8000/update?update=JOB1&task=MOP"
+curl "http://localhost:8000/resolve?taskId=JOB1"
+
+// Monitoring
+// check port for Grafana
+microk8s kubectl get svc grafana -n monitoring
+// IP address for Grafana
+http://3.143.208.132:32048/login

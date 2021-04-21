@@ -1,0 +1,10 @@
+Install Go (not necessary if everything is inside Docker but may helpful for troubleshooting "locally")
+Install MongoDB (not necessary if everything is inside Docker but may helpful for troubleshooting "locally")
+Continue modifying the "server.go" file to be doin' what we actually want instead of just foundation.
+Deploy server and database in k8s
+
+
+SERVER TODOS:
+1.)Assignee for the Task
+2.) Estimated time to complete
+3.) Priority of task

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpctest
+spec:
+  selector:
+    matchLabels:
+      run: grpctest
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: grpctest
+    spec:
+      containers:
+        - name: grpctest
+          image: grpcserver:local
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8001
+              #protocol: TCP
+              
