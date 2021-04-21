@@ -1,7 +1,7 @@
 package main
 
 import (
-    "./microservice"
+    "./labs/microservice"
     "log"
 )
 
