@@ -1,4 +1,4 @@
-module labs
+module src
 
 go 1.15
 
